@@ -1158,7 +1158,7 @@ export class CharacterController {
                     if (!moving) anim = this._actionMap.turnLeft;
                 } else {
                     if (this._act._walk) a = -1;
-                    if (!moving) { a = -1; anim = this._actionMap.turnRight; }
+                    if (!moving) { anim = this._actionMap.turnRight; }
                 }
                 if (this._hasCam)
                     this._camera.alpha = this._camera.alpha + this._rhsSign * turnAngle * a;
